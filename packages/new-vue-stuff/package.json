@@ -2,7 +2,9 @@
   "name": "new-vue-stuff",
   "version": "0.1.0",
   "private": true,
+  "main": "src/component-exporter.js",
   "scripts": {
+    "build:wc": "vue-cli-service build --target wc --name vue-app src/App.vue",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
@@ -16,6 +18,7 @@
     "@vue/cli-plugin-eslint": "^3.4.0",
     "@vue/cli-service": "^3.4.0",
     "@vue/eslint-config-prettier": "^4.0.1",
+    "@vue/web-component-wrapper": "^1.2.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
