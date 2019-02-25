@@ -40,6 +40,7 @@ The Vue component requires Vue as a global variable. Add a this as a script tag.
 
 ###angular.json
 Add the vue script to the build definition. If supporting IE11, add the webcomponentsjs polyfill as well.
+(If the vue project is published to an npm repo, could use `node_modules/new-vue-stuff` instead of `../new-vue-stuff`.)
 ``` 
 "projects": {
   "architect": {
@@ -47,7 +48,7 @@ Add the vue script to the build definition. If supporting IE11, add the webcompo
       "options": {
         "scripts": [
            "node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js",
-           "node_modules/new-vue-stuff/dist/vue-app.min.js"
+           "../new-vue-stuff/dist/vue-app.min.js"
         ]
       }
     }

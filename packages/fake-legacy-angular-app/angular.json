@@ -32,7 +32,7 @@
             ],
             "scripts": [
               "node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js",
-              "node_modules/new-vue-stuff/dist/vue-app.min.js"
+              "../new-vue-stuff/dist/vue-app.min.js"
             ],
             "es5BrowserSupport": true
           },
