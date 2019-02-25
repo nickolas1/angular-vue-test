@@ -2,7 +2,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.3.
 
 ## Changes to cli defaults to get this working 
-###package.json
+### package.json
 Manually enter a dependency to the vue component project
 ``` 
 "dependencies": {
@@ -15,7 +15,7 @@ npx lerna link
 ```
 from the main project level will add a symlink in the Angular project's `node_modules` to the Vue project.
 
-###src/app/app.module.ts
+### src/app/app.module.ts
 Enable custom elements by adding a `schemas` section to the module options
 ``` 
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
@@ -28,7 +28,7 @@ import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 })
 ```
 
-###index.html
+### index.html
 The Vue component requires Vue as a global variable. Add a this as a script tag. If using vuex, add that too, after the vue dependency.
 ```
 <head>
@@ -38,7 +38,7 @@ The Vue component requires Vue as a global variable. Add a this as a script tag.
 </head>
 ```
 
-###angular.json
+### angular.json
 Add the vue script to the build definition. If supporting IE11, add the webcomponentsjs polyfill as well.
 (If the vue project is published to an npm repo, could use `node_modules/new-vue-stuff` instead of `../new-vue-stuff`.)
 ``` 
@@ -58,7 +58,7 @@ Add the vue script to the build definition. If supporting IE11, add the webcompo
 
 If the Vue project uses assets that get webpacked and dumped into the Vue dist's `img` directory, that needs to be made available to the Angular app. Create a symlink to `path/to/the/vue/project/dist/img` as `src/img`.
 
-###Use the Vue component
+### Use the Vue component
 pass things into it, react to events etc.
 ``` 
 <vue-app [message]="messageForVue" (count-changed)="onCountChanged($event)"></vue-app>
