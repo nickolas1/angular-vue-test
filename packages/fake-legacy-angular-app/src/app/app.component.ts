@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'fake-legacy-angular-app';
+  message = 'now there is a message'
 }

@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <MessageCountWrapper/>
+        <MessageCountWrapper :message="message"/>
     </div>
 </template>
 
@@ -10,13 +10,15 @@ import store from './store';
 
 export default {
     name: 'app',
-    store,
+    store, // if using a vuex store, initialize it here rather than in main.js
+    props: {
+        // anything that needs to come from the consumer app needs to be passed in as a prop on the entry point component
+        message: {
+            type: String
+        }
+    },
     components: {
         MessageCountWrapper
-    },
-    beforeMount() {
-        console.log(this.$store)
-        // this.$store.registerModule('main', store);
     }
 };
 </script>

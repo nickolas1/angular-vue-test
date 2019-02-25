@@ -38,10 +38,10 @@ div {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
+    margin-top: 20px;
 }
 .wrapper {
-    width: 60%;
+    width: 50%;
     margin: 10px auto;
     padding: 10px;
     border: 2px solid darkslategray;
