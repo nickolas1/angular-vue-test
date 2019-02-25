@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <div :class="$style.wrapper">
         <img alt="Vue logo" src="../assets/logo.png" />
         <MessageDisplayer />
         <Counter />
@@ -31,7 +31,7 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
+<style module lang="scss">
 div {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;

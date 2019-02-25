@@ -1,5 +1,6 @@
 <template>
     <div>
+        <h5>the count is</h5>
         <h1>{{ count }}</h1>
         <button v-on:click="incrementCount()">increment that counter</button>
     </div>
@@ -13,5 +14,3 @@ export default {
     methods: mapMutations(['incrementCount'])
 };
 </script>
-
-<style scoped lang="scss"></style>

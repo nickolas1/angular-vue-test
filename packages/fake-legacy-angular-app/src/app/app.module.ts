@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { FormsModule} from '@angular/forms';
 
 // import {MessageCountWrapperElement} from 'new-vue-stuff';
 
@@ -14,7 +15,8 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -7,6 +7,7 @@
 <script>
 import MessageCountWrapper from "./components/MessageCountWrapper";
 import store from './store';
+import {mapState} from "vuex";
 
 export default {
     name: 'app',
@@ -19,9 +20,12 @@ export default {
     },
     components: {
         MessageCountWrapper
+    },
+    computed: mapState(['count']),
+    watch: {
+        count() {
+            this.$emit('count-changed', this.count)
+        }
     }
 };
 </script>
-
-<style lang="scss">
-</style>

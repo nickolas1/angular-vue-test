@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'fake-legacy-angular-app';
-  message = 'now there is a message'
+  messageForVue = undefined;
+  vueCount = undefined;
+  onCountChanged(event) {
+    this.vueCount = event.detail[0]
+  }
 }
