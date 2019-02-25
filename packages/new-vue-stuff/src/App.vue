@@ -1,13 +1,13 @@
 <template>
     <div id="app">
-        <MessageCountWrapper :message="message"/>
+        <MessageCountWrapper :message="message" />
     </div>
 </template>
 
 <script>
-import MessageCountWrapper from "./components/MessageCountWrapper";
+import MessageCountWrapper from './components/MessageCountWrapper';
 import store from './store';
-import {mapState} from "vuex";
+import { mapState } from 'vuex';
 
 export default {
     name: 'app',
@@ -24,7 +24,7 @@ export default {
     computed: mapState(['count']),
     watch: {
         count() {
-            this.$emit('count-changed', this.count)
+            this.$emit('count-changed', this.count);
         }
     }
 };

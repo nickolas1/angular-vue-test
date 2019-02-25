@@ -2,7 +2,6 @@
   "name": "new-vue-stuff",
   "version": "0.1.0",
   "private": true,
-  "main": "src/component-exporter.js",
   "scripts": {
     "build:wc": "vue-cli-service build --target wc --name vue-app src/App.vue",
     "serve": "vue-cli-service serve",

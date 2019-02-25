@@ -4,11 +4,6 @@ import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FormsModule} from '@angular/forms';
 
-// import {MessageCountWrapperElement} from 'new-vue-stuff';
-
-// console.log(MessageCountWrapperElement)
-// window.customElements.define('vue-message-count-wrapper', MessageCountWrapperElement);
-
 
 @NgModule({
   declarations: [
