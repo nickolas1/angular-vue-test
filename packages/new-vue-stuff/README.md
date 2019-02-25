@@ -1,6 +1,6 @@
 # new-vue-stuff
 ## Changes to cli defaults to get this working 
-###package.json
+### package.json
 Add a script with a web-component build target pointing to the main App entry point.
 ```
 "scripts": {
@@ -12,7 +12,7 @@ To build the project for embedding in Angular run
 npm run build:wc
 ```
 
-###src/vue.config.js (If supporting IE11 only, or if you really love css modules)
+### src/vue.config.js (If supporting IE11 only, or if you really love css modules)
 This is set up to use css modules for full IE11 compatability. If you're instead only targeting realistic browsers, skip this and just use scoped css in your Vue components.
 ``` 
 module.exports = {
@@ -30,8 +30,8 @@ module.exports = {
 ```
 
 
-###If using vuex
-####src/main.js
+### If using vuex
+#### src/main.js
 This file is not going to be part of the web component, so instead of registering vuex at the app bootstrap phase, we need to register it with the main wrapper component. Remove vuex stuff from here:
 ``` 
 import Vue from 'vue';
@@ -44,7 +44,7 @@ new Vue({
 }).$mount('#app');
 ```
 
-####src/App.vue
+#### src/App.vue
 and add it here:
 ``` 
 import store from './store';
